@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome To e-RTO System...</title>
+    <meta name="keywords" content="blue smoothie, theme, free template, website design, CSS" />
+    <meta name="description" content="Blue Smoothie Theme, free template, web design" />
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+    <script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/contentslider.css" />
+
+    <script type="text/javascript" src="scripts/contentslider.js">
+
+/***********************************************
+* Featured Content Slider- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="home">
+    <form id="form1" runat="server">
+    <!-- | | |   w w w . t e m p l a t e m o . c o m   | | | -->
+    <div id="templatemo_wrapper">
+        <div id="templatmeo_header">
+            <div id="site_title">
+                <h1>
+                    <a href="#">Free CSS Templates</a></h1>
+            </div>
+            <div id="templatemo_menu">
+                <ul>
+                    <li><a href="Default.aspx" class="current">Home</a></li>
+                    <li><a href="User_Login.aspx">Login</a></li>
+                    <li><a href="Form.aspx">RTO Forms</a></li>
+                    <li><a href="Contact_Us.aspx">Contact Us</a></li>
+                    <li><a href="Feedback.aspx">Feedback</a></li>
+                </ul>
+            </div>
+            <!-- end of templatemo_menu -->
+        </div>
+        <!-- end of header -->
+        <div id="templatemo_middle">
+            <div id="mid_slider">
+                <span></span>
+                <div id="slider1" class="sliderwrapper">
+                    <div class="contentdiv">
+                        <img src="images/slider/image_00.jpg" alt="Image 00" />
+                    </div>
+                    <div class="contentdiv">
+                        <img src="images/slider/image_01.jpg" alt="Image 01" />
+                    </div>
+                    <div class="contentdiv">
+                        <img src="images/slider/image_02.jpg" alt="Image 02" />
+                    </div>
+                    <div class="contentdiv">
+                        <img src="images/slider/image_03.jpg" alt="Image 03" />
+                    </div>
+                </div>
+                <div id="paginate-slider1" class="pagination">
+                </div>
+
+                <script type="text/javascript">
+            
+            featuredcontentslider.init({
+                id: "slider1",  //id of main slider DIV
+                contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+                toc: "#increment",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+                nextprev: ["", ""],  //labels for "prev" and "next" links. Set to "" to hide.
+                revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+                enablefade: [true, 0.4],  //[true/false, fadedegree]
+                autorotate: [true, 2000],  //[true/false, pausetime]
+                onChange: function(previndex, curindex){  //event handler fired whenever script changes slide
+                    //previndex holds index of last slide viewed b4 current (1=1st slide, 2nd=2nd etc)
+                    //curindex holds index of currently shown slide (1=1st slide, 2nd=2nd etc)
+                }
+            })
+            
+                </script>
+
+            </div>
+            <div id="mid_left">
+                <div id="mid_title">
+                    Wel Come to E-RTO</div>
+                <p>
+                    RTO Management System has been designed to automate the process of registration
+                    of vehicle and issuing driving license process.System can make the daily activities
+                    efficient and providing the fast response to store and retrieve information.</p>
+                <center>
+                </center>
+                <div id="learn_more">
+                    <a href="User/final_Test.aspx">Go 4 RTO Test</a></div>
+                </center>
+            </div>
+            <div class="cleaner">
+            </div>
+        </div>
+        <!-- end of middle -->
+        <div id="templatemo_main">
+            <div id="templatemo_content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <div class="cleaner">
+                </div>
+            </div>
+            <!-- end of templatemo_content -->
+        </div>
+        <!-- end of templatemo_main -->
+    </div>
+    <!-- end of wrapper -->
+    <div id="templatemo_footer_wrapper">
+        <div id="templatemo_footer">
+            <div class="col_allw300">
+                <h4>
+                    Our Pages</h4>
+                <ul class="footer_list">
+                    <li><a href="Default.aspx" class="current">Home</a></li>
+                    <li><a href="Registration.aspx">Registration</a></li>
+                    <li><a href="Form.aspx">RTO Forms</a></li>
+                    <li><a href="Contact_Us.aspx">Contact</a></li>
+                    <li><a href="Feedback.aspx">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="col_allw300">
+                <h4>Our Partners</h4>
+                 <ul class="footer_list">
+                <li><a href="User/Licence.aspx">Licence</a></li>            
+            	<li><a href="User/Permit.aspx" target="_parent">Permit</a></li>
+                <li><a href="User/Offences_and_Penalties.aspx" target="_parent">Offences And Penalties</a></li>
+                <li><a href="User/Taxation.aspx" target="_parent">Taxation</a></li>
+                <li><a href="User/Transfer And NOC/No_Objection_Certificate.aspx" target="_parent">Transfer And NOC</a></li>
+            </ul>
+            </div>
+            <div class="col_allw300 col_last">
+                <h4>
+                    About Us</h4>
+                <p>
+                    <marquee direction="up" behavior="scroll" scrollamount="1" scrolldelay="50">
+
+           This project prepared RTO office to maintain all the records like  issuing the LL, DL,    Vehicle registration, Vehicle ownership transfer etc. Once all these get computerized to work efficiency of the employee will get increases.  <%--<a href="#/" target="_blank">free CSS template</a> brought to you by <a href="#/" target="_blank">templatemo.com</a>. Feel free to download, modify and apply this template for your websites. Credit goes to <a href="http://www.photovaco.com/" target="_blank">Free Photos</a>. Lorem ipsum dolor sit amet. Nullam faucibus ipsum ac sapien tincidunt auctor. Nunc risus tortor. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.--%>
+            </marquee>
+                </p>
+            </div>
+            <div class="cleaner">
+            </div>
+        </div>
+        <!-- end of templatemo_footer -->
+        <div class="cleaner">
+        </div>
+    </div>
+    <div id="templatemo_copyright_wrapper">
+        <div id="templatemo_copyright">
+            Copyright©2020<a href="#">e-RTO System</a> | Developed By :<a href="Admin Login .aspx"
+                target="_parent">Vikas Rathod</a>
+        </div>
+        <!-- end of templatemo_footer -->
+    </div>
+    </form>
+</body>
+</html>
